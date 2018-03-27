@@ -1,0 +1,15 @@
+// Whole Page Wrapper
+
+.page-wrap {
+	background-color: #eee;
+	min-height: 100vh;
+	padding-top: 20px;
+
+	.main-section {
+		padding: 0 5px;
+	}
+
+	.right-sidebar {
+		padding: 0 5px;
+	}
+}

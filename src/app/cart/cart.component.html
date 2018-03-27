@@ -1,0 +1,26 @@
+<section class="widget cart-wrap">
+  <table class="table cart-table-wrap hidden">
+    <thead class="cart-header">
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Total Price</th>
+      </tr>
+    </thead>
+    <tbody class="cart-body" id="cart-body">
+      <tr app-cart-row *ngFor="let singleCartDataRow of cartData" [currentCartDataRow]="singleCartDataRow"></tr>
+    </tbody>
+  </table>
+
+  <footer class="footer-booking">
+    <div class="booking-wrap">
+      <div class="row">
+        <div class="col">Total Amount</div>
+        <div class="col total-payable-amount" id="payable-amount">{{ totalAmount | currency:'INR' }}</div>
+        <div class="col">
+          <button class="btn btn-outline-primary" id="booking-btn">Book</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>

@@ -1,0 +1,7 @@
+<td class="item">{{ singleMenuDataRow.item }}</td>
+<td test-directive class="price">{{ singleMenuDataRow.price | currency:'INR' }}</td>
+<td class="quantity-wrap">
+  <span class="decrement" (click)="decrement()">-</span>
+  <span class="quantity">{{ singleMenuDataRow.quantity }}</span>
+  <span class="increment" (click)="increment()">+</span>
+</td>

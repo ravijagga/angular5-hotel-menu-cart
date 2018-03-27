@@ -1,0 +1,32 @@
+:host {
+  max-width: calc(100% - 30px);
+  margin: 0 auto;
+  &::ng-deep {
+    // .slick-list {
+    //   background-color: blue;
+    // }
+  }
+}
+
+.category-item {
+  display: table;
+  text-align: center;
+  padding: 9px 5px 7px;
+  border-style: dashed;
+  border-width: 1px 0 1px 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  &.active-tab {
+    cursor: auto;
+    background-color: #ff9f29;
+    color: #fff;
+    border-bottom-width: 0;
+    border-top-width: 0;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+    & + .category-item {
+      border-left-width: 0;
+    }
+  }
+}

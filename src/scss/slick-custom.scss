@@ -1,0 +1,41 @@
+  // Begin Custom Slick Carousel Style
+  .slick-prev,
+  .slick-next {
+    font-size: 1.2em;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #444;
+    border: none;
+    outline: none;
+    background: transparent;
+    &.slick-disabled {
+      visibility: hidden;
+    }
+  }
+
+  .slick-prev {
+    left: -27px;
+    z-index: 999;
+    &:before {
+      content: '\f053';
+      font-family: FontAwesome; // margin-left: -9px;
+    }
+  }
+
+  .slick-next {
+    right: -27px;
+    z-index: 999;
+    &:before {
+      content: '\f054';
+      font-family: FontAwesome; // margin-left: -5px;
+    }
+  }
+
+  // End Custom Slick Carousel Style

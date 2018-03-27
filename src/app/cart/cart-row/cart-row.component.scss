@@ -1,0 +1,43 @@
+td.item {
+  &:before {
+    content: '\f192';
+    font-family: FontAwesome;
+    color: #1bbf1b;
+    margin-right: 10px;
+  }
+}
+
+td.quantity-wrap {
+  width: 100px;
+  user-select: none;
+  .quantity {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  .decrement,
+  .increment {
+    font-size: 1.2em;
+    display: inline-block;
+    line-height: 0.7em;
+    cursor: pointer;
+    margin: 0 5px;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ff8d00;
+    vertical-align: baseline;
+  }
+  .increment {
+    margin-left: 6px;
+  }
+}
+
+td.total-price {
+  width: 70px;
+  &:before {
+    content: '\f156';
+    font-family: FontAwesome;
+    margin-right: 5px;
+  }
+}

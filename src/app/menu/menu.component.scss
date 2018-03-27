@@ -1,0 +1,39 @@
+// Left Main Content Section
+
+.menu-section-wrap {
+  background-color: #fff;
+  min-height: calc(100vh - 40px);
+  border: 1px solid #ddd;
+  padding: 20px;
+
+  .title-wrap {
+    margin-bottom: 10px;
+
+    .title {
+      display: inline-block;
+      font-size: 1.5em;
+      margin: 0 auto;
+      text-transform: uppercase;
+    }
+
+    .search-box {
+      display: inline-block;
+      width: 250px;
+      margin-bottom: 10px;
+      border-radius: 20px;
+      // padding: 5px 10px 4px;
+    }
+  }
+
+  .main-menu-wrap {
+    .table {
+      th {
+        border-top: 0;
+        // text-align: center;
+        &:first-child {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}

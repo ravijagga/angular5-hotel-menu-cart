@@ -1,0 +1,8 @@
+<td class="item">{{ currentCartDataRow.item }}</td>
+<td class="quantity-wrap">
+  <span class="decrement" (click)="decrement()">-</span>
+  <span class="quantity">{{ currentCartDataRow.quantity }}</span>
+
+  <span class="increment" (click)="increment()">+</span>
+</td>
+<td class="total-price">{{ currentCartDataRow.totalPrice }}</td>

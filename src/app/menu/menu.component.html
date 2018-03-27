@@ -1,0 +1,28 @@
+<div class="menu-section-wrap">
+  <header class="page-header">
+    <div class="title-wrap clearfix">
+      <h2 class="title float-left">Menu</h2>
+      <input type="text" [(ngModel)]="searchString" (input)="printSearchString()" class="search-box form-control float-right" id="search-box"
+        name="search" placeholder="Search...">
+    </div>
+    <app-slick-slider *ngIf="!searchString"></app-slick-slider>
+  </header>
+
+  <div class="main-menu-wrap">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+        </tr>
+      </thead>
+      <tbody class="main-menu-body" id="main-menu-body">
+        <tr app-menu-row *ngFor="let menuDataRow of menuDataForView" [attr.data-item-row-id]="menuDataRow.id" [singleMenuDataRow]="menuDataRow">
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+<!-- /.article-card-wrap -->
